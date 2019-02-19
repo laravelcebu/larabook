@@ -12,9 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('/test', function() {
   return 'nino';
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
