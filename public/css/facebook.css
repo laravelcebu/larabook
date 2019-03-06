@@ -942,4 +942,13 @@ header {
     text-align: center;
     margin: 0 auto;
 }
+#settings {
+    
+    padding:55px 85px 25px 85px;
+
+}
+
+#settings hr{
+    border-top:1px solid #000000;
+}
 /* Footer finished */

@@ -1,74 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Laravel Facebook</title>
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css">
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="/css/app.css">
-    <link rel="stylesheet" type="text/css" href="/css/facebook.css">
-</head>
-<body>
-
-    <main>
-        <div id="device-bar-1">
-            <button></button>
-            <button></button>
-            <button></button>
-        </div>
-        <header>
-            <div class="tb">
-                <div class="td" id="logo">
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                </div>
-                <div class="td" id="search-form">
-                    <form method="get" action="#">
-                        <input type="text" placeholder="Search Facebook">
-                        <button type="submit"><i class="material-icons">search</i></button>
-                    </form>
-                </div>
-                <div class="td" id="f-name-l"><span>Himalaya's facebook</span></div>
-                <div class="td" id="i-links">
-                    <div class="tb">
-                        <div class="td" id="m-td">
-                            <div class="tb">
-                                <span class="td"><i class="material-icons">person_add</i></span>
-                                <span class="td"><i class="material-icons">chat_bubble</i></span>
-                                <span class="td m-active"><i class="material-icons">notifications</i></span>
-                            </div>
-                        </div>
-                        <div class="td">
-                         <img src="http://k007.kiwi6.com/hotlink/82vlhl43nx/fbme.jpg" width="300">
-                            <a href="#"  id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                             </a>
-
-                            
-                             
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+@extends ('layouts.header')
+@section('content')
         <div id="profile-upper">
             <div id="profile-banner-image">
                 <img src="http://k003.kiwi6.com/hotlink/iszu69wcec/fbg.jpg" alt="Banner image">
             </div>
             <div id="profile-d">
                 <div id="profile-pic">
-                    <img src="http://k007.kiwi6.com/hotlink/82vlhl43nx/fbme.jpg"> 
+                    <img src="/images/cool.jpg"> 
 
                 </div>
                 <div id="u-name">{{Auth::user()->name}}</div>
@@ -200,7 +138,7 @@
                                 <div class="td p-opt"><i class="material-icons">keyboard_arrow_down</i></div>
                             </div>
                             <a href="#" class="p-cnt-v">
-                                <img src="http://k003.kiwi6.com/hotlink/ksd27hdjlh/p1.jpg">
+                                <img src="/images/cool.jpg">
                             </a>
                             <div>
                                 <div class="p-acts">
@@ -245,12 +183,4 @@
             </div>
         </div>
         <div id="device-bar-2"><i class="fab fa-apple"></i></div>
-    </main>
-
-    <script type="text/javascript">
-        var date = new Date();
-        document.getElementById('curr-year').innerHTML = date.getFullYear();
-    </script>
-    <script src="/js/app.js"></script>
-</body>
-</html> 
+   @endsection

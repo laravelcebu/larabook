@@ -182,7 +182,7 @@
                                 <div class="td p-opt"><i class="material-icons">keyboard_arrow_down</i></div>
                             </div>
                             <a href="#" class="p-cnt-v">
-                                <img src="http://k003.kiwi6.com/hotlink/ksd27hdjlh/p1.jpg">
+                                <img src="/images/cool.jpg">
                             </a>
                             <div>
                                 <div class="p-acts">
