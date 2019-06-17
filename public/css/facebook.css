@@ -218,7 +218,6 @@ header {
 
 #profile-banner-image img {
     width: 100%;
-    margin-top: -20%;
 }
 
 #profile-pic {
@@ -943,12 +942,10 @@ header {
     margin: 0 auto;
 }
 #settings {
-    
-    padding:55px 85px 25px 85px;
-
+    padding: 55px 85px 25px 85px;
 }
 
-#settings hr{
-    border-top:1px solid #000000;
+#settings hr {
+    border-top: 1px solid #000000;
 }
 /* Footer finished */

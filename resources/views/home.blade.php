@@ -2,7 +2,7 @@
 @section('content')
         <div id="profile-upper">
             <div id="profile-banner-image">
-                <img src="http://k003.kiwi6.com/hotlink/iszu69wcec/fbg.jpg" alt="Banner image">
+                <img src="https://coverfiles.alphacoders.com/454/45401.jpg" alt="Banner image">
             </div>
             <div id="profile-d">
                 <div id="profile-pic">
@@ -33,8 +33,8 @@
                         </div>
                         <div id="i-box">
                             <div id="intro-line">Web developer - UI</div>
-                            <div id="u-occ">Developing awesome UIs at <a href="#">Google LLC</a> Bengaluru and inspiring other companies to do so :)</div>
-                            <div id="u-loc"><i class="material-icons">location_on</i><a href="#">Bengaluru</a>, <a href="#">India</a></div>
+                            <div id="u-occ">Developing awesome UIs at <a href="#">Facebook</a></div>
+                            <div id="u-loc"><i class="material-icons">location_on</i><a href="#">Cebu City</a>, <a href="#">Philippines</a></div>
                         </div>
                     </div>
                     <div class="l-cnt l-mrg">
@@ -128,7 +128,7 @@
                                 <a href="#" class="td p-p-pic"><img src="http://k007.kiwi6.com/hotlink/k8phd6z9a0/fbbro.jpg" alt="Rajeev's profile pic"></a>
                                 <div class="td p-r-hdr">
                                     <div class="p-u-info">
-                                        <a href="#">Rajeev Singh</a> shared a memory with <a href="#">Himalaya Singh</a> 
+                                        <a href="#">{{Auth::user()->name}}</a> shared a memory. 
                                     </div>
                                     <div class="p-dt">
                                         <i class="material-icons">calendar_today</i>
